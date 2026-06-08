@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte: IA e Automação no Campo</title>
+    <style>
+        /* Configurações Gerais e Variáveis de Cores */
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #1b5e20;
+            --accent-color: #c8e6c9;
+            --text-dark: #263238;
+            --bg-light: #f4f6f4;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1200px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Seção de Destaque (Hero) */
+        .hero-section {
+            background: linear-gradient(135deg, #2e7d32ee, #1b5e20f2), url('https://images.unsplash.com/photo-1592982537447-7440771109a3?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+            color: white;
+            padding: 3.5rem 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .hero-section h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Grid de Recursos (Cards) */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border-top: 5px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: var(--secondary-color);
+            color: white;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .hero-section { padding: 2rem 1rem; }
+            .hero-section h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AGRO FORTE: FUTURO SUSTENTÁVEL</h1>
+        <p>A Tecnologia moldando a produtividade de amanhã</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero-section">
+            <h2>Navegação por Satélite (RTK) e Inteligência Artificial</h2>
+            <p>A união de dados geoespaciais e algoritmos inteligentes permite que o maquinário agrícola execute tarefas complexas com precisão milimétrica, otimizando o tempo e reduzindo drasticamente o impacto ambiental.</p>
+        </section>
+
+        <section class="features-grid">
+            
+            <article class="card">
+                <span class="badge">Tecnologia RTK</span>
+                <h3>Piloto Automático</h3>
+                <p>Os tratores utilizam sistemas de posicionamento global avançados combinados com IA para seguir trajetórias perfeitas na lavoura.</p>
+                <ul>
+                    <li>Precisão centimétrica nas linhas de plantio.</li>
+                    <li>Redução da fadiga do operador.</li>
+                    <li>Operações eficientes mesmo em condições de baixa visibilidade ou neblina.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <span class="badge">Sustentabilidade</span>
+                <h3>Redução de Falhas</h3>
+                <p>Otimização de recursos através do cálculo exato de rotas, minimizando erros comuns de sobreposição no campo.</p>
+                <ul>
+                    <li><strong>Desperdício Zero:</strong> Evita passar o trator duas vezes no mesmo lugar.</li>
+                    <li>Economia rigorosa de combustível, sementes e defensivos.</li>
+                    <li>Proteção do solo contra a compactação desnecessária.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <span class="badge">Automação</span>
+                <h3>Tratores Autônomos</h3>
+                <p>A evolução da gestão de frotas. A inteligência artificial permite novos níveis de controle para o produtor rural.</p>
+                <ul>
+                    <li>Cabines inteligentes focadas apenas em monitoramento de dados.</li>
+                    <li>Operação 100% autônoma guiada por sensores e telemetria.</li>
+                    <li>Controle remoto e simultâneo de frotas inteiras à distância.</li>
+                </ul>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agro Forte. Todos os direitos reservados. Inovação e Sustentabilidade no Campo.</p>
+    </footer>
+
+</body>
+</html>
